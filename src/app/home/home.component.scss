@@ -1,0 +1,10 @@
+//contenitore prodotti
+
+.prodotti{
+  width: 80vw;
+  margin: auto;
+  margin-top: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap:2em;
+}

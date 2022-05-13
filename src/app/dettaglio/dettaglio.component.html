@@ -1,0 +1,11 @@
+<ng-container *ngIf="productDetails">
+  <div class=" container card mt-5">
+    <h5 class="card-header">{{productDetails.name}}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{productDetails.price}}€</h5>
+      <p class="card-text">{{productDetails.description}}</p>
+      <a href="#" (click)="addElementToCart(productDetails, $event)" class="btn btn-primary">Aggiungi al carrello</a>
+    </div>
+  </div>
+
+</ng-container>

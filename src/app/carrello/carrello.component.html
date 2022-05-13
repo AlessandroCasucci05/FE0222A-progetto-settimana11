@@ -1,0 +1,31 @@
+<ng-container *ngIf="cart.length>0" >
+  <h1 class="text-center my-3">Articoli</h1>
+  <ul class="container list-group list-group-numbered">
+    <li *ngFor="let card of cart" class="list-group-item d-flex justify-content-between align-items-center">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">{{card.name}}</div>
+        {{card.description}}
+      </div>
+      <span class="badge bg-primary rounded-pill">{{card.price}}€</span>
+    </li>
+  </ul>
+  <h5 class="text-center mt-2">Totale: {{total}}€</h5>
+
+  <h1 class="mt-3 text-center">Completa l'acquisto</h1>
+  <form [formGroup]="myForm" class="w-50 m-auto">
+    <div class="mb-3">
+      <label for="email" class="form-label"> Email</label>
+      <input type="email" class="form-control" formControlName="email" id="email">
+      <p class="text-danger" *ngIf="email?.invalid && email?.touched">La mail non è valida!</p>
+    </div>
+    <div class="mb-3">
+      <label for="indirizzo" class="form-label">Indirizzo</label>
+      <input type="type" class="form-control" formControlName="indirizzo" id="indirizzo">
+      <p class="text-danger" *ngIf="indirizzo?.invalid && indirizzo?.touched">L'indirizzo ha pochi caratteri e non è valido!</p>
+    </div>
+    <button (click)="buyCartProducts()" type="submit" [disabled]="myForm.invalid" class="btn btn-success">Acquista</button>
+  </form>
+</ng-container>
+<ng-container *ngIf="cart.length===0" >
+  <h2 class="text-center mt-5">Il tuo carrello è vuoto!</h2>
+</ng-container>
