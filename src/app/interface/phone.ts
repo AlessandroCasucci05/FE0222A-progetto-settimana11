@@ -2,5 +2,6 @@ export interface Phone {
   "id": string,
   "name": string,
   "price": number,
-  "description": string
+  "description": string,
+  "img": string
 }

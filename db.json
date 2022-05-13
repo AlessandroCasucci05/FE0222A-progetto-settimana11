@@ -4,31 +4,36 @@
       "id": 1,
       "name": "Phone XL",
       "price": 799,
-      "description": "Uno dei migliori smartphone in commercio, con schermo ampio"
+      "description": "Uno dei migliori smartphone in commercio, con schermo ampio",
+      "img": "assets/img/XL.jpg"
     },
     {
       "id": 2,
       "name": "Phone Mini",
       "price": 699,
-      "description": "Ha un'ottima fotocamera anche se piccolo"
+      "description": "Ha un'ottima fotocamera anche se piccolo",
+      "img": "assets/img/mini.webp"
     },
     {
       "id": 3,
       "name": "Phone Standard",
       "price": 299,
-      "description": "A prezzo basso, un cellulare comodo ed elegante"
+      "description": "A prezzo basso, un cellulare comodo ed elegante",
+      "img": "assets/img/standard.jpg"
     },
     {
       "id": 4,
       "name": "iPhone 13",
       "price": 839,
-      "description": "Un design robusto sotto ogni profilo"
+      "description": "Un design robusto sotto ogni profilo",
+      "img": "assets/img/13.jpg"
     },
     {
       "id": 4,
       "name": "iPhone SE",
       "price": 529,
-      "description": "Registrazione video 4K a 24 fps, 25 fps, 30 fps o 60 fps"
+      "description": "Registrazione video 4K a 24 fps, 25 fps, 30 fps o 60 fps",
+      "img": "assets/img/SE.jpg"
     }
   ],
   "prices": [
